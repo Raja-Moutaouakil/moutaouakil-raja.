@@ -1,14 +1,12 @@
 // Navbar.js
 import PropTypes from "prop-types";
 
-import "../App.css";
-
 const Navbar = (props) => {
   return (
     <header className="header">
       <nav>
         <div className="logo">
-          <a href="index.html">
+          <a href="index.html" aria-label="Go to homepage" title="Homepage">
             {props.firstName}
             <span>{props.lastName}</span>
           </a>
@@ -19,18 +17,18 @@ const Navbar = (props) => {
         </label>
         <ul className="menu">
           <li>
-            <a href="#">About</a>
+            <a href="#" aria-label="About section" title="About">About</a>
           </li>
 
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" aria-label="Projects section" title="Projects">Projects</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills" aria-label="Skills section" title="Skills">Skills</a>
           </li>
           
           <li>
-            <a href="#contact" className="navbar-btn">
+            <a href="#contact" className="navbar-btn" aria-label="Contact section" title="Contact Me">
               Contact Me
             </a>
           </li>

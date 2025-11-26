@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="footer">
       <p>
         Made with ❤️ by{" "}
-        <a href="https://github.com/Raja-Moutaouakil">Raja-Moutaouakil</a>.
+  <a href="https://github.com/Raja-Moutaouakil" aria-label="Raja Moutaouakil GitHub profile" title="GitHub: Raja-Moutaouakil">Raja-Moutaouakil</a>.
       </p>
     </footer>
   );

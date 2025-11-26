@@ -27,7 +27,15 @@ const projects = [
     img: "/todo-list.png.png", // Add image if available
     preview: "https://to-do-listapp-kohl.vercel.app/",
   },
+  {
+    name: "Dar Marrakech :",
+    description:
+      "Authentic Moroccan Cuisine Restaurant Landing Page using react.",
+    sourceCode: "https://github.com/rajae-moutaouakil/landing-page-react",
+    img: "/landing-page-react.png.png",
+    preview: "https://landing-pagereact-blush.vercel.app/",
   
+  },
 ];
 //projects end
 export default projects;

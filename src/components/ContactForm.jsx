@@ -13,10 +13,15 @@ const ContactForm = () => {
           <a href="mailto:rajaemoutaouakil362@gmail.com">email</a>. 👋
         </p>
         <h3>Or find me on:</h3>
-        <div className="hero-socials">
+        <div className="hero-socials" aria-label="Contact social links">
           {socials.map((social, index) => (
-            <a key={index} href={social.url}>
-              <img src={`/socials/${social.icon}`} alt="" />
+            <a
+              key={`${social.url || social.name}-${index}`}
+              href={social.url}
+              aria-label={social.name}
+              title={social.name}
+            >
+              <img src={`/socials/${social.icon}`} alt={social.name} />
             </a>
           ))}
         </div>

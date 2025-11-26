@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.cdnfonts.com/css/technology?styles=26651");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --glow-color: hsl(12, 100%, 69%);
 }
@@ -55,8 +59,8 @@ body {
   width: 100%;
   background: rgba(33, 37, 41, 0.8);
   box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.37);
-  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border: 1px 0 solid rgba(255, 255, 255, 0.18);
   z-index: 1;
   font-family: "Share Tech Mono", monospace;
@@ -78,7 +82,7 @@ nav {
 }
 
 .logo a span {
-  color: #fa3939;
+  color: #ff6b6b;
 }
 
 .menu {
@@ -123,8 +127,8 @@ nav {
     flex-direction: column;
     background: rgba(5, 0, 0, 0.3);
     box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.37);
-    backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     border: 1px 0 solid rgba(255, 255, 255, 0.18);
 
     align-items: start;
@@ -492,15 +496,18 @@ form > input[type="submit"]:hover {
 }
 .navbar-btn {
   padding: 10px;
-  background-color: #fa3939;
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+  background-color: transparent;
   border-radius: 10px;
   transition: 0.2s all ease-in-out;
-  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.6);
+  box-shadow: 0 4px 16px 0 rgba(255, 107, 107, 0.2);
 }
 .navbar-btn:hover {
   transform: scale(1.1);
-  background-color: #f10505;
-  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.8);
+  background-color: #ff6b6b;
+  color: #212529;
+  box-shadow: 0 8px 32px 0 rgba(255, 107, 107, 0.4);
 }
 .wrapper {
   width: auto;
@@ -549,20 +556,22 @@ form > input[type="submit"]:hover {
 } */
 .cyber-scourge {
   text-decoration: none;
-  color: #fff;
+  color: #ff6b6b;
   font-size: 30px;
   margin-top: 30px;
   padding: 10px;
-  background-color: #fa3939;
+  border: 1px solid #ff6b6b;
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.6);
+  box-shadow: 0 4px 16px 0 rgba(255, 107, 107, 0.2);
   margin-bottom: 20px;
   transition: 0.2s all ease-in-out;
 }
 .cyber-scourge:hover {
   transform: scale(1.1);
-  background-color: #f10505;
-  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.8);
+  background-color: #ff6b6b;
+  color: #212529;
+  box-shadow: 0 8px 32px 0 rgba(255, 107, 107, 0.4);
 }
 .hero-typewriter {
   display: flex;

@@ -50,27 +50,26 @@ function App() {
       />
       <div className="hr"></div>
 
-      <section id="projects">
+  <section id="projects" className="px-2 md:px-4 pt-10">
         <Heading firstWord="My" secondWord="Projects" />
         <motion.div
-          className="project-map"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full max-w-[1200px] mx-auto"
           ref={ref}
           initial="hidden"
           animate={controls}
           variants={containerVariants}
         >
           {projects.map((project, index) => (
-            <div key={index}>
-              <ProjectCard
-                name={project.name}
-                img={project.img}
-                description={project.description}
-                stack={project.stack}
-                sourceCode={project.sourceCode}
-                preview={project.preview}
-                creator={project.creator}
-              />
-            </div>
+            <ProjectCard
+              key={index}
+              name={project.name}
+              img={project.img}
+              description={project.description}
+              stack={project.stack}
+              sourceCode={project.sourceCode}
+              preview={project.preview}
+              creator={project.creator}
+            />
           ))}
         </motion.div>
       </section>
